@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --font-color: white;
+  --primary-color: #0779e4;
+  --secondary-color: #a2de96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+.fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+a {
+  text-decoration: none;
+}
+
+/* -----header ------------------------------------------------------------------------------------------------- */
+.navbar {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.sign-btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 3px solid var(--primary-color);
+  background-color: transparent;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-weight: 600;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.sign-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+/* ------section ----------------------------------------------------------------------------------------------- */
+
+section {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.left-section {
+  height: 100%;
+  width: 40%;
+  /* background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.left-section .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-section {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-elements {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f5efef;
+}
+
+/* -----social / sign up icons ------------------------------------------------------------------------------------*/
+.socials {
+  display: flex;
+  justify-content: flex-start;
+}
+.btn {
+  margin-right: 15px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-large {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+.btn-other {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+}
+
+/* ---------forms-------------------------------------------------------------------------------------------------*/
+.title {
+  margin-bottom: 20px;
+}
+.form-section {
+  margin-top: 20px;
+}
+
+.form-part {
+  margin-bottom: 20px;
+}
+.labels {
+  display: block;
+}
+.txt-area {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #84a9ac;
+}
+.terms-part {
+  display: flex;
+}
+.terms {
+  margin-top: -10px;
+}
+.terms-label {
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+.switch-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.create-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.8s;
+}
+.create-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* ------ media querrie ------------------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .logo {
+    color: black;
+  }
+  section {
+    flex: none;
+  }
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .main-elements {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+  }
+}

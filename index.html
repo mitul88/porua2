@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <title>Porua | Welcome</title>
+  </head>
+  <body>
+    <main>
+      <header class="navbar fluid">
+        <h3 class="logo">porua</h3>
+        <span class="bar-text"
+          >New to porua ?
+          <p class="sign-btn" onclick="myFunction()">Sign in</p></span
+        >
+      </header>
+      <section>
+        <div class="left-section">
+          <img src="img/bg-img.png" alt="cloud" class="image" />
+        </div>
+        <div class="right-section">
+          <div class="main-elements">
+            <div id="box1">
+              <h1 class="title">Sign up</h1>
+              <form action="">
+                <div class="form-part">
+                  <label for="name" class="labels">Your Name :</label>
+                  <input
+                    class="txt-area"
+                    type="text"
+                    placeholder=" Write your full name"
+                  />
+                </div>
+                <div class="form-part">
+                  <label for="email" class="labels">Your Email :</label>
+                  <input
+                    class="txt-area"
+                    type="email"
+                    placeholder=" Your email here"
+                  />
+                </div>
+                <!-- <div class="form-part line">
+                  <div class="line1"></div>
+                  <small>or</small>
+                  <div class="line2"></div>
+                </div> -->
+                <div class="form-part">
+                  <label for="phone" class="labels">Your Phone Number :</label>
+                  <input
+                    class="txt-area"
+                    placeholder=" 017XXXXXXXX"
+                    type="tel"
+                    pattern="[0-9]{11}"
+                  />
+                </div>
+                <div class="form-part">
+                  <label for="password" class="labels">Your Password :</label>
+                  <input
+                    class="txt-area"
+                    type="password"
+                    placeholder=" Minimum 8 Character"
+                  />
+                </div>
+                <div class="form-part">
+                  <label for="confirm-password" class="labels"
+                    >Confirm Password :</label
+                  >
+                  <input
+                    class="txt-area"
+                    type="password"
+                    placeholder=" Confirm"
+                  />
+                </div>
+                <button class="create-btn">Create Account</button>
+              </form>
+            </div>
+            <div id="box2" style="display: none;">
+              <h1 class="title">Sign in</h1>
+              <form action="">
+                <div class="form-part">
+                  <label for="email" class="labels">Your Email :</label>
+                  <input
+                    class="txt-area"
+                    type="email"
+                    placeholder=" Your email here"
+                  />
+                </div>
+                <p class="switch-text"><strong>or</strong></p>
+                <div class="form-part">
+                  <label for="phone" class="labels">Your Phone Number :</label>
+                  <input
+                    class="txt-area"
+                    placeholder=" 017XXXXXXXX"
+                    type="tel"
+                    pattern="[0-9]{11}"
+                  />
+                </div>
+                <div class="form-part">
+                  <label for="password" class="labels">Your Password :</label>
+                  <input
+                    class="txt-area"
+                    type="password"
+                    placeholder=" Minimum 8 Character"
+                  />
+                </div>
+                <button class="create-btn">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
